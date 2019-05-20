@@ -1234,6 +1234,14 @@ M.local_block_rgrade={
             }
           });
 
+          // Solve simplemodal bug - rebinding handler
+          $('#layer-grades').on('click', '.simplemodal-close', function(e) {
+            log("Closing simpleModal ...");
+            $.dialog.close();
+
+            return false;
+          });
+
           /*
            * Getter y Setter del touch de un formulario (idem jquery val()). Si
            * sólo recibe un parámetro devuelve el valor actual y si dos setea la
