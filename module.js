@@ -1224,7 +1224,7 @@ M.local_block_rgrade={
                 return;
               }
 
-              $(this).dialog("close");
+              $("#layer-grades").dialog("close");
 
               if (reload && currentView) {
                 log("Reload view " + currentView.name);
@@ -1235,12 +1235,12 @@ M.local_block_rgrade={
           });
 
           // Solve simplemodal bug - rebinding handler
-          $('#layer-grades').on('click', '.simplemodal-close', function(e) {
-            log("Closing simpleModal ...");
-            $(this).dialog.close();
+          //$('#layer-grades').on('click', '.simplemodal-close', function(e) {
+            //log("Closing simpleModal ...");
+            //$('#layer-grades').dialog('close');
 
-            return false;
-          });
+            //return false;
+          //});
 
           /*
            * Getter y Setter del touch de un formulario (idem jquery val()). Si
