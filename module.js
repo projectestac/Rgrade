@@ -1236,7 +1236,7 @@ M.local_block_rgrade={
 
           // Solve simplemodal bug - rebinding handler
           $('#layer-grades').on('click', '.simplemodal-close', function(e) {
-            log("Closing simpleModal ...");
+            
             $('#layer-grades').dialog('close');
 
             return false;
