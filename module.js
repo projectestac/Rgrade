@@ -1234,7 +1234,7 @@ M.local_block_rgrade={
             }
           });
 
-          // Solve simplemodal bug - rebinding handler
+          // Solve simplemodal bug
           $('#layer-grades').on('click', '.simplemodal-close', function(e) {
             
             $('#layer-grades').dialog('close');
